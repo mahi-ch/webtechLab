@@ -25,6 +25,10 @@
               
                 let r4 = tot * num4/100;
                 $('.d4').html("Savings "+r4)
+                
+                if (num1+num2+num3+num4 > 100) {
+                    alert("Limit Exceeded") 
+                }
 
             })
         })
