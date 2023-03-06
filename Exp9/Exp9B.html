@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<title>AJS Routing</title>
+</head>
+<body ng-app="myapp">
+<h1>Angular JS Routing</h1>
+<a href="#!personaldetails">Personal and Academic Details</a><br>
+<a href="#!project">Project Details</a><br>
+<a href="#!login">Login</a><br>
+<a href="#!signup">Sign Up</a><br>
+<div ng-view></div>
+<script>
+    const app = angular.module("myapp", ["ngRoute"]);
+    app.config(function($routeProvider){
+        $routeProvider
+        .when('/personaldetails',{
+            templateUrl:"personaldetails.html"
+            })
+        .when('/project',{
+            templateUrl:"project.html" })
+        .when('/login',{
+            templateUrl: "login.html"})
+        .when('/signup',{
+            templateUrl: "signup.html"
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney</title>
+</head>
+<body>
+<form action="submit.php" method="post">
+            <div style ="text-align: center;">
+          <table align="center">
+<tr><td align="left">Name</td>
+<td><input type="text" placeholder="Enter your name" required>
+</td></tr>
+<tr><td align="left">Application Number</td>
+    <td><input type="text" placeholder="URK20CS1001" required>
+    </td></tr>
+    <tr><td align="left">Password:</td>
+        <td><input type="password" placeholder="*********"required>
+        </td></tr>
+        <tr><td align="left">Date of Birth:</td>
+        <td><input type="date" required>
+            </td></tr>
+            <tr><td align="left">Age:</td>
+                <td><input type="number" required>
+                    </td></tr>
+            <tr><td align="left">Mobile Number:</td>
+                <td><input type="number" placeholder="Enter mobile number"required>
+                </td></tr>
+            <tr><td align="left">Email:</td>
+                <td><input type="email" placeholder="Enter email id"required>
+                </td></tr>
+                <tr><td align="left">Gender</td>
+                <td><input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female 
+                </td></tr>
+            <tr><td align="left">Address:</td>
+                <td><textarea name="paragraph_text" cols="20" rows="5"required></textarea>
+                 </td></tr>
+
+    <tr><td align="left">Languages known:</td>
+    <td><input type="checkbox">Hindi
+    <td><input type="checkbox">Telugu
+    <td><input type="checkbox">Tamil
+    <td><input type="checkbox">English
+    </td></tr>
+
+        <tr><td align="left">Select your course:</td>
+            <td><select name="course" id="course">
+                <option value="CSE">B.Tech Computer Science and Engineering</option>
+                <option value="ECE">B.Tech Mechanical Engineering</option>
+                <option value="BT">B.Tech Bio-Technology</option>
+                <option value="FS">B.Tech Forensic Sciences</option>
+                
+              </select>
+            </td></tr>
+        <tr><td><button ng-click="submit()">Submit</button></td></tr>
+        </form>
+    </table>
+    </div>
+      </form>
